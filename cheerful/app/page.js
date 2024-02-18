@@ -109,7 +109,7 @@ export default function Home() {
         <div className={styles.countdownContainer}>
           <p className={styles.countdownText}>Cuddle Countdown:</p>
           <div className={styles.countdown}>
-            <Countdown date={march29th} renderer={renderer} />
+            <Countdown date={feb29th} renderer={renderer} />
           </div>
         </div>
       </main>
