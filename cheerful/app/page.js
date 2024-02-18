@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Countdown from "react-countdown";
 
-// List of encouraging long-distance relationship quotes
 const quotes = [
   "Distance means so little when someone means so much ❤️",
   "Absence sharpens love, presence strengthens it 💑",
