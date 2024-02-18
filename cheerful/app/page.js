@@ -79,7 +79,7 @@ export default function Home() {
   }, []);
 
   // Date for March 29th
-  const march29th = new Date("2024-03-29T00:00:00");
+  const feb29th = new Date("2024-03-29T00:00:00");
 
   // Renderer for Countdown component to display days, hours, minutes, and seconds
   const renderer = ({ days, hours, minutes, seconds }) => {
