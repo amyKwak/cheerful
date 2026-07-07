@@ -75,7 +75,12 @@ export function ListEditorScreen({ today, initialItems, lastWeekItems, onSave }:
                 ↩ Carry over last week
               </Button>
             )}
-            <Button variant="primary" onClick={() => onSave(items)} style={{ marginLeft: 'auto' }}>
+            <Button
+              variant="primary"
+              onClick={() => onSave(items)}
+              disabled={filledCount < 5}
+              style={{ marginLeft: 'auto' }}
+            >
               Save list
             </Button>
           </div>
