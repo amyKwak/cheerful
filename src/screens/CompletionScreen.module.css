@@ -1,0 +1,107 @@
+@keyframes swingL {
+  0% { transform: translate(0, 0) rotate(-15deg); }
+  36% { transform: translate(14px, -16px) rotate(-15deg); }
+  43% { transform: translate(11px, -13px) rotate(-15deg); }
+  50% { transform: translate(14px, -16px) rotate(-15deg); }
+  68% { transform: translate(14px, -16px) rotate(-15deg); }
+  84% { transform: translate(0, 0) rotate(-15deg); }
+  100% { transform: translate(0, 0) rotate(-15deg); }
+}
+
+@keyframes swingR {
+  0% { transform: translate(0, 0) rotate(15deg); }
+  36% { transform: translate(-14px, -16px) rotate(15deg); }
+  43% { transform: translate(-11px, -13px) rotate(15deg); }
+  50% { transform: translate(-14px, -16px) rotate(15deg); }
+  68% { transform: translate(-14px, -16px) rotate(15deg); }
+  84% { transform: translate(0, 0) rotate(15deg); }
+  100% { transform: translate(0, 0) rotate(15deg); }
+}
+
+@keyframes cheersPop {
+  0%, 36% { opacity: 0; transform: scale(0.2) rotate(-8deg); }
+  48% { opacity: 1; transform: scale(1.16) rotate(-3deg); }
+  58% { transform: scale(0.95) rotate(-3deg); }
+  100% { opacity: 1; transform: scale(1) rotate(-3deg); }
+}
+
+@keyframes confettiBurst {
+  0%, 36% { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  42% { opacity: 1; }
+  100% { opacity: 1; transform: translate(var(--tx), var(--ty)) rotate(var(--rot)); }
+}
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(#fff0d2, #fff7ec 55%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 24px;
+  overflow: hidden;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confettiOrigin {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  z-index: 1;
+}
+
+.confettiPiece {
+  position: absolute;
+  animation: confettiBurst 2.6s ease-out 1 forwards;
+}
+
+.mugs {
+  width: min(280px, 60vw);
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+
+.mugL {
+  transform-origin: 75px 92px;
+  animation: swingL 2.6s ease-in-out 1 forwards;
+}
+
+.mugR {
+  transform-origin: 145px 92px;
+  animation: swingR 2.6s ease-in-out 1 forwards;
+}
+
+.cheers {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: clamp(38px, 8vw, 58px);
+  color: #f5a623;
+  line-height: 1;
+  margin-top: 4px;
+  animation: cheersPop 2.6s ease-in-out 1 forwards;
+  transform-origin: center;
+}
+
+.blurb {
+  font-weight: 700;
+  font-size: 16px;
+  color: #7a756b;
+  margin: 14px 0 0;
+  max-width: 420px;
+}
+
+.doneButton {
+  margin-top: 22px;
+}

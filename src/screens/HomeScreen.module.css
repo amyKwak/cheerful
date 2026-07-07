@@ -1,0 +1,134 @@
+.page {
+  min-height: 100vh;
+  background: #fff7ec;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 40px;
+  border-bottom: 1px solid #efe6d6;
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 68px;
+    padding: 0 20px;
+  }
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 520px;
+}
+
+.eyebrow {
+  font-weight: 800;
+  font-size: 13px;
+  color: #c97b14;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 1.05;
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #7a756b;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.card {
+  border-radius: 24px;
+  padding: 26px 30px;
+  margin-top: 22px;
+  box-shadow: 0 7px 0 #d98a17;
+  background: #f5a623;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 560px) {
+  .card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    padding: 22px 20px;
+  }
+}
+
+.cardEyebrow {
+  font-weight: 800;
+  font-size: 12px;
+  color: #8a5a10;
+  letter-spacing: 0.08em;
+}
+
+.cardTitle {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 26px;
+  margin: 6px 0 2px;
+}
+
+.cardBody {
+  font-weight: 700;
+  font-size: 14px;
+  color: #7a4e0a;
+}
+
+.progressWrap {
+  margin-top: 16px;
+}
+
+.note {
+  margin-top: 16px;
+  background: #fff3d6;
+  border: 2px solid #f3e3be;
+  border-radius: 18px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #8a5a10;
+  line-height: 1.35;
+}
+
+.linkRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}

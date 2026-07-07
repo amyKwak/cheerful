@@ -1,0 +1,106 @@
+.page {
+  min-height: 100vh;
+  background: #2c2a26;
+  color: #fff7ec;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+.glow {
+  position: absolute;
+  top: -25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(70vh, 700px);
+  height: min(70vh, 700px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.16), transparent 66%);
+  pointer-events: none;
+}
+
+.counter {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  font-weight: 800;
+  font-size: 14px;
+  color: #f5a623;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 640px) {
+  .counter {
+    top: 18px;
+    left: 20px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 22px;
+  color: #7a756b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 6px;
+}
+
+@media (max-width: 640px) {
+  .close {
+    top: 14px;
+    right: 16px;
+  }
+}
+
+.emoji {
+  font-size: 34px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.text {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: clamp(26px, 5vw, 44px);
+  line-height: 1.25;
+  position: relative;
+  max-width: 720px;
+}
+
+.dots {
+  display: flex;
+  gap: 9px;
+  justify-content: center;
+  margin-top: 34px;
+  position: relative;
+}
+
+.dot {
+  width: 30px;
+  height: 7px;
+  border-radius: 4px;
+  background: #5c574e;
+}
+
+.dot.active {
+  background: #f5a623;
+}
+
+.hint {
+  position: absolute;
+  bottom: 26px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #7a756b;
+}

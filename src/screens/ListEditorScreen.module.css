@@ -1,0 +1,157 @@
+.page {
+  min-height: 100vh;
+  background: #fff7ec;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 40px;
+  border-bottom: 1px solid #efe6d6;
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 68px;
+    padding: 0 20px;
+  }
+}
+
+.filledCount {
+  font-weight: 800;
+  font-size: 14px;
+  color: #9a9488;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 620px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff3d6;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-weight: 800;
+  font-size: 12px;
+  color: #c97b14;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 15px;
+  color: #7a756b;
+  margin: 8px 0 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 2px solid #efe6d6;
+  border-radius: 15px;
+  padding: 15px 16px;
+}
+
+.item.empty {
+  border-style: dashed;
+  border-color: #e2d8c6;
+}
+
+.itemSpan2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 640px) {
+  .itemSpan2 {
+    grid-column: span 1;
+  }
+}
+
+.badge {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: 50%;
+  background: #f5a623;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.empty {
+  background: #fff3d6;
+  color: #c97b14;
+}
+
+.itemInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #2c2a26;
+  min-width: 0;
+}
+
+.itemInput::placeholder {
+  font-weight: 600;
+  color: #b4aea2;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
